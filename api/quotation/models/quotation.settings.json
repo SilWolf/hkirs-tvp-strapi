@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotations",
+  "info": {
+    "name": "Quotation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "QuotationItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "quotation-block.quotation-item",
+      "required": true
+    },
+    "totalPrice": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "vendorName": {
+      "type": "string",
+      "required": true
+    },
+    "venderAddress": {
+      "type": "text",
+      "required": true
+    },
+    "customerName": {
+      "type": "string",
+      "required": true
+    },
+    "customerAddress": {
+      "type": "text",
+      "required": true
+    },
+    "isAccepted": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_learnings",
+  "info": {
+    "name": "eLearning",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "classes": {
+      "collection": "class"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ELearningPost": {
+      "type": "component",
+      "repeatable": true,
+      "component": "e-learning-block.e-learning-post"
+    }
+  }
+}

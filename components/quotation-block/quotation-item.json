@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_quotation_block_quotation_items",
+  "info": {
+    "name": "QuotationItem",
+    "icon": "table"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "unitPrice": {
+      "type": "decimal",
+      "required": true,
+      "default": 0
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    }
+  }
+}

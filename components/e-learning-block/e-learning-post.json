@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_e_learning_block_e_learning_posts",
+  "info": {
+    "name": "ELearningPost",
+    "icon": "file-contract",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "topic": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "name": "Class",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
+    },
+    "capcity": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "min": 0
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "course": {
+      "model": "course",
+      "via": "classes"
+    },
+    "lessons": {
+      "via": "class",
+      "collection": "lesson"
+    }
+  }
+}

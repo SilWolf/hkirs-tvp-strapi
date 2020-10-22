@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_events",
+  "info": {
+    "name": "UserEvent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "startAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "endAt": {
+      "type": "datetime",
+      "required": false
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_events"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "attendence",
+        "payroll"
+      ],
+      "required": true,
+      "default": "attendence"
+    }
+  }
+}

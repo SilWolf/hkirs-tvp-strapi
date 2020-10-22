@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/veunes",
+      "handler": "veune.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/veunes/count",
+      "handler": "veune.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/veunes/:id",
+      "handler": "veune.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/veunes",
+      "handler": "veune.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/veunes/:id",
+      "handler": "veune.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/veunes/:id",
+      "handler": "veune.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
