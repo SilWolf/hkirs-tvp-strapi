@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
       },
       options: {
         authenticationDatabase: env("AUTHENTICATION_DATABASE", "admin"),
-        ssl: env.bool("DATABASE_SSL", false),
+        ssl: true,
       },
     },
   },
