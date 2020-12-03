@@ -42,6 +42,27 @@
     "classes": {
       "via": "course",
       "collection": "class"
+    },
+    "priceMin": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "priceMax": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "rating": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "ratingCount": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "required": true
     }
   }
 }

@@ -60,12 +60,15 @@
       "configurable": false
     },
     "user_events": {
-      "via": "users_permissions_user",
-      "collection": "user-event"
+      "collection": "user-event",
+      "via": "users_permissions_user"
     },
     "user_profiles": {
-      "via": "users_permissions_user",
-      "collection": "user-profile"
+      "collection": "user-profile",
+      "via": "users_permissions_user"
+    },
+    "user_registered_classes": {
+      "collection": "class"
     }
   }
 }

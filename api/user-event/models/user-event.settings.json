@@ -24,9 +24,9 @@
       "required": false
     },
     "users_permissions_user": {
+      "via": "user_events",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "user_events"
+      "model": "user"
     },
     "type": {
       "type": "enumeration",

@@ -40,8 +40,13 @@
       "via": "classes"
     },
     "lessons": {
-      "via": "class",
-      "collection": "lesson"
+      "collection": "lesson",
+      "via": "class"
+    },
+    "user_profiles": {
+      "collection": "user-profile",
+      "via": "classes",
+      "dominant": true
     }
   }
 }

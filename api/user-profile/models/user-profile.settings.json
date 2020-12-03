@@ -25,9 +25,13 @@
       "required": false
     },
     "users_permissions_user": {
+      "via": "user_profiles",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "user_profiles"
+      "model": "user"
+    },
+    "classes": {
+      "via": "user_profiles",
+      "collection": "class"
     }
   }
 }

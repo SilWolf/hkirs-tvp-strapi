@@ -28,8 +28,8 @@
       "unique": false
     },
     "class": {
-      "model": "class",
-      "via": "lessons"
+      "via": "lessons",
+      "model": "class"
     },
     "veune": {
       "model": "veune"
