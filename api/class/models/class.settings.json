@@ -49,6 +49,12 @@
       "collection": "user",
       "via": "classes",
       "dominant": true
+    },
+    "user_profiles": {
+      "private": true,
+      "collection": "user-profile",
+      "via": "classes",
+      "dominant": true
     }
   }
 }
