@@ -66,6 +66,10 @@
     "user_profiles": {
       "via": "users_permissions_user",
       "collection": "user-profile"
+    },
+    "classes": {
+      "via": "users",
+      "collection": "class"
     }
   }
 }

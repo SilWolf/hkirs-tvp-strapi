@@ -40,8 +40,15 @@
       "via": "classes"
     },
     "lessons": {
-      "via": "class",
-      "collection": "lesson"
+      "collection": "lesson",
+      "via": "class"
+    },
+    "users": {
+      "private": true,
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "classes",
+      "dominant": true
     }
   }
 }
