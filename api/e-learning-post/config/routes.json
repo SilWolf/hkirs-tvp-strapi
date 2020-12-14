@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/e-learning-posts",
+      "handler": "e-learning-post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/e-learning-posts/count",
+      "handler": "e-learning-post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/e-learning-posts/:id",
+      "handler": "e-learning-post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/e-learning-posts",
+      "handler": "e-learning-post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/e-learning-posts/:id",
+      "handler": "e-learning-post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/e-learning-posts/:id",
+      "handler": "e-learning-post.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -55,6 +55,10 @@
       "collection": "user-profile",
       "via": "classes",
       "dominant": true
+    },
+    "e_learning": {
+      "via": "classes",
+      "model": "e-learning"
     }
   }
 }

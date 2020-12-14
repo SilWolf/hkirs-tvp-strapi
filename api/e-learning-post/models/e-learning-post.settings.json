@@ -1,38 +1,38 @@
 {
   "kind": "collectionType",
-  "collectionName": "e_learnings",
+  "collectionName": "e_learning_posts",
   "info": {
-    "name": "eLearning",
+    "name": "ELearningPost",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "title": {
       "type": "string"
     },
-    "classes": {
-      "private": true,
-      "collection": "class",
-      "via": "e_learning"
+    "content": {
+      "type": "richtext",
+      "required": true
     },
     "files": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
       "required": false
     },
-    "e_learning_posts": {
-      "via": "e_learnings",
-      "collection": "e-learning-post"
+    "e_learnings": {
+      "collection": "e-learning",
+      "via": "e_learning_posts",
+      "dominant": true
     }
   }
 }
