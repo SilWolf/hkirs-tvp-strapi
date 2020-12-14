@@ -44,10 +44,9 @@
       "via": "class"
     },
     "users": {
-      "private": true,
+      "via": "classes",
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "classes",
       "dominant": true
     },
     "user_profiles": {

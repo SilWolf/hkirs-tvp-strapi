@@ -60,16 +60,23 @@
       "configurable": false
     },
     "user_events": {
+      "private": true,
       "collection": "user-event",
       "via": "users_permissions_user"
     },
     "user_profiles": {
-      "via": "users_permissions_user",
-      "collection": "user-profile"
+      "private": true,
+      "collection": "user-profile",
+      "via": "users_permissions_user"
     },
     "classes": {
-      "via": "users",
-      "collection": "class"
+      "private": true,
+      "collection": "class",
+      "via": "users"
+    },
+    "user_schedules": {
+      "via": "user",
+      "collection": "user-schedule"
     }
   }
 }
