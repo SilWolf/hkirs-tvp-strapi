@@ -23,10 +23,10 @@
       "type": "datetime",
       "required": false
     },
-    "users_permissions_user": {
-      "via": "user_events",
+    "user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "user_events"
     },
     "type": {
       "type": "enumeration",

@@ -59,11 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "user_events": {
-      "private": true,
-      "collection": "user-event",
-      "via": "users_permissions_user"
-    },
     "user_profiles": {
       "private": true,
       "collection": "user-profile",
@@ -77,6 +72,10 @@
     "user_schedules": {
       "via": "user",
       "collection": "user-schedule"
+    },
+    "user_events": {
+      "via": "user",
+      "collection": "user-event"
     }
   }
 }
