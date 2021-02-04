@@ -114,3 +114,5 @@ exports
 build
 
 .strapi-updater.json
+.env.staging
+.docker-compose-dev

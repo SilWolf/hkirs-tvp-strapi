@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/veunes",
-      "handler": "veune.find",
+      "path": "/venue-bookings",
+      "handler": "venue-booking.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/veunes/count",
-      "handler": "veune.count",
+      "path": "/venue-bookings/count",
+      "handler": "venue-booking.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/veunes/:id",
-      "handler": "veune.findOne",
+      "path": "/venue-bookings/:id",
+      "handler": "venue-booking.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/veunes",
-      "handler": "veune.create",
+      "path": "/venue-bookings",
+      "handler": "venue-booking.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/veunes/:id",
-      "handler": "veune.update",
+      "path": "/venue-bookings/:id",
+      "handler": "venue-booking.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/veunes/:id",
-      "handler": "veune.delete",
+      "path": "/venue-bookings/:id",
+      "handler": "venue-booking.delete",
       "config": {
         "policies": []
       }

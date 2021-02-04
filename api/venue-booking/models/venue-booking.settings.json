@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "venue_bookings",
+  "info": {
+    "name": "VenueBooking",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "startAt": {
+      "type": "datetime"
+    },
+    "endAt": {
+      "type": "datetime"
+    },
+    "isApproved": {
+      "type": "boolean"
+    },
+    "bookingReason": {
+      "type": "text",
+      "required": true
+    },
+    "rejectingReason": {
+      "type": "text"
+    },
+    "venue": {
+      "model": "venue"
+    },
+    "bookedBy": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

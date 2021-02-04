@@ -27,12 +27,12 @@
       "required": true,
       "unique": false
     },
-    "class": {
-      "via": "lessons",
-      "model": "class"
+    "cls": {
+      "model": "class",
+      "via": "lessons"
     },
-    "veune": {
-      "model": "veune"
+    "venue": {
+      "model": "venue"
     }
   }
 }

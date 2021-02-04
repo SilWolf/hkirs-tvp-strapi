@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "veunes",
+  "collectionName": "venues",
   "info": {
-    "name": "Veune",
+    "name": "Venue",
     "description": ""
   },
   "options": {
