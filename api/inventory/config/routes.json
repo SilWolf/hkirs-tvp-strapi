@@ -2,6 +2,22 @@
   "routes": [
     {
       "method": "GET",
+      "path": "/inventories/:id/logs",
+      "handler": "inventory.findLogs",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inventories/:id/logs",
+      "handler": "inventory.createLog",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/inventories",
       "handler": "inventory.find",
       "config": {

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_logs",
+  "info": {
+    "name": "InventoryLog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "inventory": {
+      "private": true,
+      "model": "inventory"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
