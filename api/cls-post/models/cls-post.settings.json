@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cls_posts",
+  "info": {
+    "name": "A.IV - 課堂通告s",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "clses": {
+      "collection": "class"
+    }
+  }
+}

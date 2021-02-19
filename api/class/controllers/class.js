@@ -31,6 +31,27 @@ module.exports = {
     return {};
   },
 
+  async announcements(ctx) {
+    const { id } = ctx.params;
+
+    const query = {
+      ...ctx.query,
+      clses_in: id,
+      _sort: "createdAt:DESC",
+    };
+
+    let entities;
+    if (query._q) {
+      entities = await strapi.services["cls-post"].search(query);
+    } else {
+      entities = await strapi.services["cls-post"].find(query);
+    }
+
+    return entities.map((entity) =>
+      sanitizeEntity(entity, { model: strapi.models["cls-post"] })
+    );
+  },
+
   async postApplicationAndCheckout(ctx) {
     const user = ctx.state?.user;
     if (!user || user.role?.name !== "Authenticated") {

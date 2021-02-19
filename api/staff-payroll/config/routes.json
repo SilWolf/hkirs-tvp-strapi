@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/staff-payrolls",
+      "handler": "staff-payroll.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staff-payrolls/count",
+      "handler": "staff-payroll.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/staff-payrolls/:id",
+      "handler": "staff-payroll.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/staff-payrolls",
+      "handler": "staff-payroll.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/staff-payrolls/:id",
+      "handler": "staff-payroll.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/staff-payrolls/:id",
+      "handler": "staff-payroll.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

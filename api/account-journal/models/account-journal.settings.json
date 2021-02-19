@@ -2,13 +2,13 @@
   "kind": "collectionType",
   "collectionName": "account_journals",
   "info": {
-    "name": "AccountJournal",
+    "name": "e.I - 會計紀錄s",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -28,6 +28,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "value": {
+      "type": "decimal",
+      "default": 0
     }
   }
 }

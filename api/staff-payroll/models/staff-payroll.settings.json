@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "clients",
+  "collectionName": "staff_payrolls",
   "info": {
-    "name": "E.II - 客戶s",
+    "name": "E.IV - 職員支薪紀錄s",
     "description": ""
   },
   "options": {
@@ -11,21 +11,22 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
+    "staff": {
+      "plugin": "users-permissions",
+      "model": "user"
     },
-    "portrait": {
-      "model": "file",
+    "amount": {
+      "type": "decimal"
+    },
+    "reference": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
+        "files",
         "images"
       ],
       "plugin": "upload",
       "required": false
-    },
-    "description": {
-      "type": "text"
     }
   }
 }

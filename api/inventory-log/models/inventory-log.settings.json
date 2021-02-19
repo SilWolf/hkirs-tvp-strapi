@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "inventory_logs",
   "info": {
-    "name": "InventoryLog",
+    "name": "c.II - 物品流動紀錄",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
       "model": "inventory"
     },
     "description": {
-      "type": "richtext"
+      "type": "text"
     },
     "quantity": {
       "type": "integer",

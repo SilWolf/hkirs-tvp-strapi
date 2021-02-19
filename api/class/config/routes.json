@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/classes/:id/announcements",
+      "handler": "class.announcements",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/classes/:id/application",
       "handler": "class.postApplicationAndCheckout",

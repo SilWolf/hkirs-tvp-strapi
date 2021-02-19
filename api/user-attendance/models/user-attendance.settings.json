@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_attendances",
+  "info": {
+    "name": "B.II - 出席紀錄s",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "cls": {
+      "model": "class"
+    },
+    "onAt": {
+      "type": "datetime"
+    },
+    "offAt": {
+      "type": "datetime"
+    }
+  }
+}

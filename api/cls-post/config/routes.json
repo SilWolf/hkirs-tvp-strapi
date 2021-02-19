@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cls-posts",
+      "handler": "cls-post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cls-posts/count",
+      "handler": "cls-post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cls-posts/:id",
+      "handler": "cls-post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cls-posts",
+      "handler": "cls-post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cls-posts/:id",
+      "handler": "cls-post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cls-posts/:id",
+      "handler": "cls-post.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

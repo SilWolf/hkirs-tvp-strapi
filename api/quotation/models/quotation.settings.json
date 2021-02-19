@@ -2,13 +2,13 @@
   "kind": "collectionType",
   "collectionName": "quotations",
   "info": {
-    "name": "Quotation",
+    "name": "e.III - 報價s",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -16,18 +16,13 @@
       "required": true
     },
     "description": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "QuotationItem": {
       "type": "component",
       "repeatable": true,
       "component": "quotation-block.quotation-item",
-      "required": true
-    },
-    "totalPrice": {
-      "type": "decimal",
-      "default": 0,
       "required": true
     },
     "vendorName": {
@@ -46,10 +41,44 @@
       "type": "text",
       "required": true
     },
-    "isAccepted": {
-      "type": "boolean",
-      "default": false,
-      "required": true
+    "client": {
+      "model": "client"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "paidAt": {
+      "type": "datetime"
+    },
+    "paidReferences": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "acceptedAt": {
+      "type": "datetime"
+    },
+    "acceptedReferences": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

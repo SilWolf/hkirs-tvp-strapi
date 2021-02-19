@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "venue_bookings",
   "info": {
-    "name": "VenueBooking",
+    "name": "d.II - 場地預約",
     "description": ""
   },
   "options": {

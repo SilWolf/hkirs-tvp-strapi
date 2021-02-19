@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "inventories",
   "info": {
-    "name": "Inventory",
+    "name": "c.I - 物品管理",
     "description": ""
   },
   "options": {

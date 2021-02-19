@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "users-permissions_user",
   "info": {
-    "name": "user",
+    "name": "b.I - 學生／職員",
     "description": ""
   },
   "options": {
@@ -58,15 +58,6 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "user_profiles": {
-      "private": true,
-      "collection": "user-profile",
-      "via": "users_permissions_user"
-    },
-    "user_schedules": {
-      "via": "user",
-      "collection": "user-schedule"
     },
     "user_events": {
       "via": "user",

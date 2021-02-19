@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-attendances",
+      "handler": "user-attendance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-attendances/count",
+      "handler": "user-attendance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-attendances/:id",
+      "handler": "user-attendance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-attendances",
+      "handler": "user-attendance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-attendances/:id",
+      "handler": "user-attendance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-attendances/:id",
+      "handler": "user-attendance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
