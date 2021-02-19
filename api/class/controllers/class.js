@@ -16,6 +16,7 @@ module.exports = {
         user: user.id,
         clsStartAt_gte: startAt,
         clsStartAt_lte: endAt,
+        isConfirmed: true,
       });
       const clses = cas.map((ca) => ca.cls).filter((cls) => !!cls);
 
