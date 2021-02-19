@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "clients",
   "info": {
-    "name": "E.II - 客戶s",
+    "name": "E.II - 客戶",
     "description": ""
   },
   "options": {
@@ -18,9 +18,7 @@
     "portrait": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
+      "allowedTypes": ["images"],
       "plugin": "upload",
       "required": false
     },

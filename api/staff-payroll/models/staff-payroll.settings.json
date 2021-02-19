@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "staff_payrolls",
   "info": {
-    "name": "E.IV - 職員支薪紀錄s",
+    "name": "E.IV - 職員支薪紀錄",
     "description": ""
   },
   "options": {
@@ -21,10 +21,7 @@
     "reference": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "files",
-        "images"
-      ],
+      "allowedTypes": ["files", "images"],
       "plugin": "upload",
       "required": false
     }
