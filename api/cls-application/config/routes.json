@@ -2,64 +2,64 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/classes",
-      "handler": "class.find",
+      "path": "/cls-applications",
+      "handler": "cls-application.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/classes/count",
-      "handler": "class.count",
+      "path": "/cls-applications/count",
+      "handler": "cls-application.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/classes/me",
-      "handler": "class.me",
+      "path": "/cls-applications/me",
+      "handler": "cls-application.me",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/classes/:id/application",
-      "handler": "class.postApplicationAndCheckout",
+      "path": "/cls-applications/checkoutComplete",
+      "handler": "cls-application.checkoutComplete",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/classes/:id",
-      "handler": "class.findOne",
+      "path": "/cls-applications/:id",
+      "handler": "cls-application.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/classes",
-      "handler": "class.create",
+      "path": "/cls-applications",
+      "handler": "cls-application.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/classes/:id",
-      "handler": "class.update",
+      "path": "/cls-applications/:id",
+      "handler": "cls-application.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/classes/:id",
-      "handler": "class.delete",
+      "path": "/cls-applications/:id",
+      "handler": "cls-application.delete",
       "config": {
         "policies": []
       }

@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "startAt": {
@@ -26,10 +26,6 @@
       "type": "string",
       "required": true,
       "unique": false
-    },
-    "cls": {
-      "model": "class",
-      "via": "lessons"
     },
     "venue": {
       "model": "venue"

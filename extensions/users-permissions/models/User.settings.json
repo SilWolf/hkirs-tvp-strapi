@@ -64,11 +64,6 @@
       "collection": "user-profile",
       "via": "users_permissions_user"
     },
-    "classes": {
-      "private": true,
-      "collection": "class",
-      "via": "users"
-    },
     "user_schedules": {
       "via": "user",
       "collection": "user-schedule"

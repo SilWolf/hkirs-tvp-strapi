@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/courses/:id/clses",
+      "handler": "course.findClses",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/courses/:id",
       "handler": "course.findOne",
       "config": {

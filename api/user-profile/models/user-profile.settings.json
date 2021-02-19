@@ -28,10 +28,6 @@
       "via": "user_profiles",
       "plugin": "users-permissions",
       "model": "user"
-    },
-    "classes": {
-      "via": "user_profiles",
-      "collection": "class"
     }
   }
 }

@@ -15,9 +15,8 @@
       "type": "string"
     },
     "classes": {
-      "private": true,
-      "collection": "class",
-      "via": "e_learning"
+      "via": "e_learning",
+      "collection": "class"
     },
     "files": {
       "collection": "file",

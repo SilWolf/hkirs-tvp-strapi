@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cls_applications",
+  "info": {
+    "name": "III - 課堂報名",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "cls": {
+      "model": "class"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": ["M", "F"],
+      "default": "M",
+      "required": true
+    },
+    "age": {
+      "type": "integer",
+      "default": 10,
+      "required": true,
+      "min": 0,
+      "max": 999
+    },
+    "hkid": {
+      "type": "string",
+      "required": true,
+      "maxLength": 10
+    },
+    "paymentId": {
+      "type": "string",
+      "private": true
+    },
+    "isPaid": {
+      "type": "boolean",
+      "default": false,
+      "private": false
+    },
+    "isConfirmed": {
+      "type": "boolean",
+      "default": false,
+      "private": false
+    },
+    "clsStartAt": {
+      "type": "datetime"
+    },
+    "clsEndAt": {
+      "type": "datetime"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "classes",
   "info": {
-    "name": "Class",
+    "name": "II - 課堂",
     "description": ""
   },
   "options": {
@@ -11,53 +11,55 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
     "code": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "price": {
       "type": "decimal",
       "min": 0,
       "default": 0
     },
-    "capcity": {
+    "startAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "endAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "capcityMin": {
       "type": "integer",
       "default": 0,
       "required": true,
       "min": 0
     },
-    "startDate": {
-      "type": "date",
+    "capacityMax": {
+      "type": "integer",
+      "default": 8,
       "required": true
-    },
-    "endDate": {
-      "type": "date",
-      "required": true
-    },
-    "course": {
-      "model": "course",
-      "via": "classes"
-    },
-    "users": {
-      "via": "classes",
-      "plugin": "users-permissions",
-      "collection": "user",
-      "dominant": true
-    },
-    "user_profiles": {
-      "private": true,
-      "collection": "user-profile",
-      "via": "classes",
-      "dominant": true
-    },
-    "e_learning": {
-      "via": "classes",
-      "model": "e-learning"
     },
     "lessons": {
-      "via": "cls",
-      "collection": "lesson"
+      "type": "component",
+      "repeatable": true,
+      "component": "lesson-block.lessons",
+      "required": true,
+      "min": 1
+    },
+    "course": {
+      "model": "course"
+    },
+    "e_learning": {
+      "model": "e-learning",
+      "via": "classes"
+    },
+    "venue": {
+      "model": "venue"
     }
   }
 }
