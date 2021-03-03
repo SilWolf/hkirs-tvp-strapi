@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "quotations",
   "info": {
-    "name": "e.III - 報價s",
+    "name": "e.III - 報價",
     "description": ""
   },
   "options": {
@@ -47,10 +47,7 @@
     "files": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "images",
-        "files"
-      ],
+      "allowedTypes": ["images", "files"],
       "plugin": "upload",
       "required": false
     },
@@ -60,10 +57,7 @@
     "paidReferences": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "images",
-        "files"
-      ],
+      "allowedTypes": ["images", "files"],
       "plugin": "upload",
       "required": false
     },
@@ -73,10 +67,7 @@
     "acceptedReferences": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": [
-        "files",
-        "images"
-      ],
+      "allowedTypes": ["files", "images"],
       "plugin": "upload",
       "required": false
     },
