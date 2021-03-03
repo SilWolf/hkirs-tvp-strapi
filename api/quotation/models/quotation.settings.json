@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "quotations",
   "info": {
-    "name": "e.III - 報價",
+    "name": "e.III - 報價s",
     "description": ""
   },
   "options": {
@@ -19,7 +19,7 @@
       "type": "text",
       "required": true
     },
-    "QuotationItem": {
+    "items": {
       "type": "component",
       "repeatable": true,
       "component": "quotation-block.quotation-item",
@@ -47,7 +47,10 @@
     "files": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["images", "files"],
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
       "plugin": "upload",
       "required": false
     },
@@ -57,7 +60,10 @@
     "paidReferences": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["images", "files"],
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
       "plugin": "upload",
       "required": false
     },
@@ -67,9 +73,16 @@
     "acceptedReferences": {
       "collection": "file",
       "via": "related",
-      "allowedTypes": ["files", "images"],
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
       "plugin": "upload",
       "required": false
+    },
+    "accountJournals": {
+      "collection": "account-journal",
+      "via": "invoice"
     }
   }
 }
